@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>LISTS</title>
+</head>
+
+<body>
+    <script>
+        // arr.length == 5
+        //            0   1   2     3       4
+        const arr = [10, 20, -2, 3.44, 99.999]
+
+        // arr[5] => undefined
+        // arr[ arr.length - 1 ]
+
+        arr[2] = 29.5
+        //               0   1     2     3       4
+        // const arr = [10, 20, 29.5, 3.44, 99.999]
+
+
+        arr[2] = parseInt(prompt())
+        
+        // for : 0 => 4 kolel
+        for (let i = 0; i < arr.length; i++) {
+            document.write(arr[ i ] + ' ')
+            // i = 0
+            // arr[0] 10
+            // arr[1] 20
+            // arr[2] -2
+            // arr[3] 3.44
+            // arr[4] 99.999
+        }
+
+
+        // ** BONUS
+        //            0         1     2    3           4
+        const arr2 = [1, 'orange', true, 5.4, [6, 9, 10]]
+        //                                     0  1   2
+        // arr2 [0] == 1
+        // arr2 [1] == 'orange'
+        // arr2 [2] == true
+        // arr2 [3] == 5.4
+        // arr2 [4] == [6, 9, 10]
+        // arr2.length == 5
+        // arr2[4].length == 3
+        // arr2[4][1] == 9
+        for (let i = 0; i < arr2.length; i++) {
+            document.write(arr2[ i ] + ' ')
+            if (Array.isArray(arr2[i])) {
+                for (let j = 0; j < arr2[i].length; j++) {
+
+                }
+            }
+        }        
+
+        // targil:
+        // 1. create an array with 5 numbers (whatever you want)
+        // 2. create a for loop to print all numbers 
+        // 3. create a for loop to prompt all numbers
+        //    hint: arr[i] = parseInt(prompt('enter number: '))
+        // 4. **bonus: use a for loop to sum all of the numbers
+        // 5. **bonus: calculate the avg (sum / number-of-elements
+        // use arr.length (not 5)
+    </script>
+</body>
+
+</html>

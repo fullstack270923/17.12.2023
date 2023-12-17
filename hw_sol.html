@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Homework solution</title>
+</head>
+
+<body>
+    <script>
+        // 1 
+        for (let x = 12; x <= 24; x++) {
+            document.write(x + ' ');
+        }
+        document.write('<br />')
+
+        // 2 
+        for (let x = 7; x <= 31; x += 2) {
+            document.write(x + ' ');
+        }
+        document.write('<br />')
+
+        // 3
+        for (let x = 10; x >= -20; x -= 2) {
+            document.write(x + ' ');
+        }
+        document.write('<br />')
+
+        // 4
+        document.write('FOR: <br />')
+        for (let x = 1; x <= 45; x++) {
+            document.write(x + ' ')
+            if (x % 3 == 0) {
+                document.write('Fizz')
+            }
+            if (x % 5 == 0) {
+                document.write('Buzz')
+            }
+            document.write(', ')
+        }
+        document.write('<br />')
+
+        // 4 - while
+        document.write('WHILE: <br />')
+        let x = 1
+        while (x <= 45) {
+            document.write(x + ' ')
+            if (x % 3 == 0) {
+                document.write('Fizz')
+            }
+            if (x % 5 == 0) {
+                document.write('Buzz')
+            }
+            document.write(', ')
+            x++
+        }
+        document.write('<br />')
+
+        // 4 - do while
+        document.write('DO WHILE: <br />')
+        x = 1
+        do {
+            document.write(x + ' ')
+            if (x % 3 == 0) {
+                document.write('Fizz')
+            }
+            if (x % 5 == 0) {
+                document.write('Buzz')
+            }
+            document.write(', ')
+            x++
+        }
+        while (x <= 45)
+        document.write('<br />')
+
+        // input 3 numbers
+        // do it again until sum 1 + 2 > 3
+        // 1 4 6
+        let tzela1
+        let tzela2
+        let tzela3
+        do {
+            tzela1 = parseInt(prompt('Enter tzela 1: '))
+            tzela2 = parseInt(prompt('Enter tzela 2: '))
+            tzela3 = parseInt(prompt('Enter tzela 3: '))
+        }
+        while (tzela1 + tzela2 <= tzela3)
+
+    </script>
+</body>
+
+</html>
