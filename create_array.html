@@ -8,24 +8,42 @@
 <body>
     <script>
         const student_in_class = parseInt(prompt('How many students?'))
-        const arr = new Array(student_in_class).fill(0)
-        for (let i = 0; i < arr.length; i++) {
-            arr[ i ] = parseInt(prompt('Enter grade for student array #' + i))
+        const grades = new Array(student_in_class).fill(0)
+        for (let i = 0; i < grades.length; i++) {
+            grades[ i ] = parseInt(prompt('Enter grade for student array #' + i))
         }
         let sum = 0
-        for (let i = 0; i < arr.length; i++) {
-            sum += arr[ i ]
+        for (let i = 0; i < grades.length; i++) {
+            sum += grades[ i ]
         }        
-        document.write(arr)
+        document.write(grades)
         document.write('<br />')
         document.write('sum = ' + sum)
         document.write('<br />')
-        const avg = sum / arr.length
+        const avg = sum / grades.length
         document.write('avg = ' + avg)
 
         // print all of the grades that are higher from the AVG
         // print all of the grades that are lower from the AVG
         // **bonus: find the highest grade in the class
+
+        document.write('<br />')
+        document.write('Grades greater than AVG: ')
+        for (let i = 0; i < grades.length; i++) {
+            // check if grades[ i ] is greater than AVG, if so- print it
+            if (grades[ i ] > avg) {
+                document.write(grades[ i ] + ', ')
+            }
+        }  
+        document.write('<br />')
+        document.write('Grades lower than AVG: ')
+        for (let i = 0; i < grades.length; i++) {
+            // check if grades[ i ] is lower than AVG, if so- print it
+            if (grades[ i ] < avg) {
+                document.write(grades[ i ] + ', ')
+            }            
+        }  
+
     </script>
 </body>
 
