@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>LISTS SOLUTION</title>
+</head>
+
+<body>
+    <script>
+        const student_in_class = parseInt(prompt('How many students?'))
+        const arr = new Array(student_in_class).fill(0)
+        for (let i = 0; i < arr.length; i++) {
+            arr[ i ] = parseInt(prompt('Enter grade for student array #' + i))
+        }
+        let sum = 0
+        for (let i = 0; i < arr.length; i++) {
+            sum += arr[ i ]
+        }        
+        document.write(arr)
+        document.write('<br />')
+        document.write('sum = ' + sum)
+        document.write('<br />')
+        const avg = sum / arr.length
+        document.write('avg = ' + avg)
+
+        // print all of the grades that are higher from the AVG
+        // print all of the grades that are lower from the AVG
+        // **bonus: find the highest grade in the class
+    </script>
+</body>
+
+</html>
